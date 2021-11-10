@@ -1,0 +1,13 @@
+---
+- name: Automate Ansible Controller
+  hosts: localhost
+  tasks:
+    - name: Print a very important message
+      ansible.controller.ad_hoc_command:
+        inventory: Demo Inventory
+        validate_certs: False
+        controller_host: "{{ controller_host }}"
+        controller_oauthtoken: "{{ oauth_token }}"
+        credential: Demo Credential
+        module_name: command
+        module_args: echo "{{ message_to_print }}"
