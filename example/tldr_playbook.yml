@@ -1,0 +1,9 @@
+---
+- name: Execute the TLDR role
+  hosts: localhost
+  vars:
+    tldr_command: vim
+  tasks:
+    - include_role: 
+        name: hyrule.test_collection.tldr
+
