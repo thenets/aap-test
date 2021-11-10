@@ -1,2 +1,4 @@
 collections:
   - hyrule.coffee_collection
+  - ansible.controller
+
